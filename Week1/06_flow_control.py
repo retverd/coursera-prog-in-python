@@ -1,6 +1,11 @@
 import random
 
-number = random.randint(0, 101)
+min_value = 1
+max_value = 100
+
+number = random.randint(min_value - 1, max_value + 1)
+
+print(f'Угадайте целое число от {min_value} до {max_value}!')
 
 while True:
     answer = input('Угадайте число: ')
